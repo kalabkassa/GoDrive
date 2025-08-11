@@ -16,7 +16,9 @@ A simple Node.js server using Express and Nodemailer to send emails from a conta
    cd your-repo
 
 2. Create a .env file to setup email
-     eg. SMTP_HOST=smtp.example.com
+     eg.
+   ```config
+         SMTP_HOST=smtp.example.com
          SMTP_PORT=465
          SMTP_USER=your@email.com
          SMTP_PASS=yourpassword
