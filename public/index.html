@@ -47,17 +47,14 @@
                 </div>
 
                 <div class="nav-section book-section">
-                    <a href="vehicles.html">
-                        <div class="btn-book-now">
-                            <span>Book Now</span>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.95312 2.09082L7.64687 1.39707C7.94062 1.10332 8.41563 1.10332 8.70625 1.39707L14.7812 7.46895C15.075 7.7627 15.075 8.2377 14.7812 8.52832L8.70625 14.6033C8.4125 14.8971 7.9375 14.8971 7.64688 14.6033L6.95313 13.9096C6.65625 13.6127 6.6625 13.1283 6.96563 12.8377L10.7312 9.2502H1.75C1.33437 9.2502 1 8.91582 1 8.5002V7.5002C1 7.08457 1.33437 6.7502 1.75 6.7502H10.7312L6.96562 3.1627C6.65937 2.87207 6.65312 2.3877 6.95312 2.09082Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                    </a>
+                    <div class="btn-book-now">
+                        <span>Book Now</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.95312 2.09082L7.64687 1.39707C7.94062 1.10332 8.41563 1.10332 8.70625 1.39707L14.7812 7.46895C15.075 7.7627 15.075 8.2377 14.7812 8.52832L8.70625 14.6033C8.4125 14.8971 7.9375 14.8971 7.64688 14.6033L6.95313 13.9096C6.65625 13.6127 6.6625 13.1283 6.96563 12.8377L10.7312 9.2502H1.75C1.33437 9.2502 1 8.91582 1 8.5002V7.5002C1 7.08457 1.33437 6.7502 1.75 6.7502H10.7312L6.96562 3.1627C6.65937 2.87207 6.65312 2.3877 6.95312 2.09082Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
                 </div>
 
                 <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
@@ -71,7 +68,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <!-- Yellow accent background -->
         <div class="hero-bg-yellow"></div>
 
@@ -498,16 +495,14 @@
             </div>
 
             <div class="section-cta">
-                <a href="vehicles.html">
-                    <div class="btn-book-now">
-                        <span>Book Now</span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path
-                                d="M6.95312 2.09082L7.64687 1.39707C7.94062 1.10332 8.41563 1.10332 8.70625 1.39707L14.7812 7.46895C15.075 7.7627 15.075 8.2377 14.7812 8.52832L8.70625 14.6033C8.4125 14.8971 7.9375 14.8971 7.64688 14.6033L6.95313 13.9096C6.65625 13.6127 6.6625 13.1283 6.96563 12.8377L10.7312 9.2502H1.75C1.33437 9.2502 1 8.91582 1 8.5002V7.5002C1 7.08457 1.33437 6.7502 1.75 6.7502H10.7312L6.96562 3.1627C6.65937 2.87207 6.65312 2.3877 6.95312 2.09082Z"
-                                fill="currentColor" />
-                        </svg>
-                    </div>
-                </a>
+                <div onclick="openForm()" class="btn-book-now">
+                    <span>Book Now</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path
+                            d="M6.95312 2.09082L7.64687 1.39707C7.94062 1.10332 8.41563 1.10332 8.70625 1.39707L14.7812 7.46895C15.075 7.7627 15.075 8.2377 14.7812 8.52832L8.70625 14.6033C8.4125 14.8971 7.9375 14.8971 7.64688 14.6033L6.95313 13.9096C6.65625 13.6127 6.6625 13.1283 6.96563 12.8377L10.7312 9.2502H1.75C1.33437 9.2502 1 8.91582 1 8.5002V7.5002C1 7.08457 1.33437 6.7502 1.75 6.7502H10.7312L6.96562 3.1627C6.65937 2.87207 6.65312 2.3877 6.95312 2.09082Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
@@ -693,6 +688,14 @@
             }
         });
         function openForm() {
+            const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+            if (isDesktop) {
+                const hash = document.querySelector('.hero');
+                setTimeout(() => {
+                    hash.scrollIntoView({behavior: 'smooth'});
+                }, 100);
+                return;
+            }
             document.getElementById("formOverlay").classList.add("active");
             document.getElementById("bookingForm").classList.add("active");
             document.body.style.overflow = "hidden"; // disable scrolling
