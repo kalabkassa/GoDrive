@@ -1,0 +1,165 @@
+.vehicle-listing__title {
+    font-family: 'Inter';
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.vehicle-listing {
+    flex-wrap: wrap;
+    padding-inline: 4rem;
+    gap: 2.3rem;
+}
+
+.vehicle-listing__filters {
+    background-color: #F9FAFB;
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.filters__header {
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.filters__label {
+    font-family: 'Inter';
+    font-size: .9rem;
+    font-weight: 500;
+    padding-bottom: .75rem;
+}
+
+.filter-option {
+    font-family: 'Inter';
+    font-size: .9rem;
+    font-weight: 400;
+    gap: .5rem;
+    padding-bottom: .5rem;
+}
+
+.filter-option__checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.13rem;
+    border: 1px solid #D6DADF;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-option__checkbox:checked {
+    background-color: #F4C201;
+    border-color: #EAB308;
+}
+
+.filters__reset {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: .9rem;
+    background-color: black;
+    border-radius: .5rem;
+    color: white;
+    padding-block: .5rem;
+    padding-inline: 5rem;
+    margin-top: 2rem;
+}
+
+.vehicle-card {
+    background-color: #FAFAFA;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    margin-top: .75rem;
+}
+
+.vehicle-card__image {
+    width: 23rem;
+}
+
+.vehicle-card__info {
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    justify-content: space-between;
+}
+
+.vehicle-card__name,
+.vehicle-card__amount {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: .25rem;
+}
+
+.feature__label,
+.vehicle-card__type,
+.vehicle-card__per {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 60%);
+}
+
+.vehicle-card__amount {
+    color: #F4C201;
+}
+
+.vehicle-card__features {
+    justify-content: space-between;
+}
+
+.vehicle-card__feature {
+    gap: .5rem;
+}
+
+.feature__icon {
+    width: 1.5rem;
+}
+
+.feature__label {
+    margin-block: auto;
+}
+
+.vehicle-card__cta {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-block: 1rem;
+    width: 100%;
+    margin-top: 2.5rem;
+    border-radius: .75rem;
+}
+
+@media (max-width: 768px) {
+    .vehicle-listing__title {
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .vehicle-listing {
+        padding-inline: 1.5rem;
+        gap: 2rem;
+    }
+
+    .vehicle-card__image {
+        width: 20rem;
+    }
+
+    .feature__icon {
+        width: 1.3rem;
+    }
+
+    .feature__label {
+        font-size: .9rem;
+    }
+}

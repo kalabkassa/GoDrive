@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO Drive - Beyond Cars Creating Journeys</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Inria+Serif:wght@400;700&family=Work+Sans:wght@400;500;600;700&family=Adamina:wght@400&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-section logo-section">
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="image/doc_2025-06-18_21-13-22-removebg-preview.png" alt="GO Drive Logo">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="nav-mobile-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#facts" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="vehicles.html">
+                        <div class="btn-book-now">Book Now</div>
+                    </a>
+                </div>
+
+                <div class="nav-section nav-links-section">
+                    <nav class="nav-desktop">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#facts" class="nav-link">About</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="nav-section book-section">
+                    <a href="vehicles.html">
+                        <div class="btn-book-now">
+                            <span>Book Now</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.95312 2.09082L7.64687 1.39707C7.94062 1.10332 8.41563 1.10332 8.70625 1.39707L14.7812 7.46895C15.075 7.7627 15.075 8.2377 14.7812 8.52832L8.70625 14.6033C8.4125 14.8971 7.9375 14.8971 7.64688 14.6033L6.95313 13.9096C6.65625 13.6127 6.6625 13.1283 6.96563 12.8377L10.7312 9.2502H1.75C1.33437 9.2502 1 8.91582 1 8.5002V7.5002C1 7.08457 1.33437 6.7502 1.75 6.7502H10.7312L6.96562 3.1627C6.65937 2.87207 6.65312 2.3877 6.95312 2.09082Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Yellow accent background -->
+        <div class="hero-bg-yellow"></div>
+
+        <!-- Hero car image -->
+        <!-- <div class="hero-car">
+            <img src="image/heroimg.png" alt="Hero Car">
+        </div> -->
+
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <!-- Column 1: Text -->
+                <div class="hero-left">
+                    <h1 class="hero-title">
+                        <span class="hero-title-line1">Beyond Cars</span>
+                        <span class="flex">
+                            <span class="hero-title-line2">Creating Journeys</span>
+                            <span class="closing-quote">
+                                <svg width="40" height="40" viewBox="0 0 39 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="scale(-1,1) translate(-39,0)">
+                                        <path
+                                            d="M8.62832 32C6.86431 32 5.33038 31.5188 4.02655 30.5564C2.72271 29.5138 1.72566 28.1103 1.0354 26.3459C0.345133 24.5815 0 22.5764 0 20.3308C0 17.604 0.421829 14.9975 1.26549 12.5113C2.18584 9.94486 3.56637 7.57895 5.40708 5.41354C7.24779 3.24812 9.62537 1.44361 12.5398 0L17.3717 4.69173C15.3009 5.41354 13.4602 6.41604 11.8496 7.69925C10.3156 8.98246 9.05015 10.4261 8.0531 12.0301C7.13274 13.6341 6.48083 15.2782 6.09735 16.9624L6.55752 17.203C6.86431 16.9624 7.24779 16.7619 7.70796 16.6015C8.16814 16.4411 8.85841 16.3609 9.77876 16.3609C10.6991 16.3609 11.6578 16.6416 12.6549 17.203C13.6519 17.7644 14.4572 18.6065 15.0708 19.7293C15.7611 20.7719 16.1062 22.1754 16.1062 23.9398C16.1062 25.3835 15.7611 26.7068 15.0708 27.9098C14.4572 29.1128 13.5752 30.1153 12.4248 30.9173C11.2743 31.6391 10.0089 32 8.62832 32ZM30.2566 32C28.4926 32 26.9587 31.5188 25.6549 30.5564C24.351 29.5138 23.354 28.1103 22.6637 26.3459C21.9735 24.5815 21.6283 22.5764 21.6283 20.3308C21.6283 17.604 22.0501 14.9975 22.8938 12.5113C23.8142 9.94486 25.1947 7.57895 27.0354 5.41354C28.8761 3.24812 31.2537 1.44361 34.1681 0L39 4.69173C36.9292 5.41354 35.0885 6.41604 33.4779 7.69925C31.944 8.98246 30.6785 10.4261 29.6814 12.0301C28.7611 13.6341 28.1091 15.2782 27.7257 16.9624L28.1858 17.203C28.4926 16.9624 28.8761 16.7619 29.3363 16.6015C29.7965 16.4411 30.4867 16.3609 31.4071 16.3609C32.3274 16.3609 33.2861 16.6416 34.2832 17.203C35.2802 17.7644 36.0855 18.6065 36.6991 19.7293C37.3894 20.7719 37.7345 22.1754 37.7345 23.9398C37.7345 25.3835 37.3894 26.7068 36.6991 27.9098C36.0855 29.1128 35.2035 30.1153 34.0531 30.9173C32.9027 31.6391 31.6372 32 30.2566 32Z"
+                                            fill="black" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </span>
+                    </h1>
+                </div>
+
+                <!-- Column 2: Car image -->
+                <div class="hero-right">
+                    <img src="image/heroimg.png" alt="Hero Car" class="hero-img" />
+                </div>
+                <!-- Booking Form positioned at bottom -->
+                <div class="hero-booking">
+                    <button onclick="openForm()" class="booking-cta">
+                        <p>Book</p>
+                    </button>
+                    <div class="overlay" id="formOverlay">
+                    </div>
+                    <div class="booking-form" id="bookingForm">
+                        <h3 class="booking-title">Find your perfect car</h3>
+
+                        <form class="booking-fields">
+                            <!-- Pickup Location -->
+                            <div class="field-group">
+                                <label class="field-label">Pickup Location</label>
+                                <div class="field-wrapper">
+                                    <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path
+                                            d="M8.15625 1.5C5.67188 1.5 3.65625 3.41844 3.65625 5.78125C3.65625 8.5 6.65625 12.8084 7.75781 14.2966C7.85622 14.4318 7.98903 14.4994 8.15625 14.4994C8.32347 14.4994 8.45628 14.4318 8.55469 14.2966C9.65625 12.8091 12.6562 8.50219 12.6562 5.78125C12.6562 3.41844 10.6406 1.5 8.15625 1.5Z"
+                                            stroke="#6B7280" stroke-linejoin="round" />
+                                        <circle cx="8.15625" cy="6" r="1.5" stroke="#6B7280" stroke-linejoin="round" />
+                                    </svg>
+                                    <select class="field-input select-input">
+                                        <option>ADDIS ABABA</option>
+                                    </select>
+                                    <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                        <path
+                                            d="M2.64648 4.85359L3.35359 4.14648L6.00004 6.79293L8.64649 4.14649L9.3536 4.85359L6.00005 8.20714L2.64648 4.85359Z"
+                                            fill="#1F2937" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Date Selection -->
+                            <div class="date-fields">
+                                <div class="field-group">
+                                    <label class="field-label">Pickup Date</label>
+                                    <div class="field-wrapper">
+                                        <svg class="field-icon" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                            <path
+                                                d="M0.234375 14.5C0.234375 15.3281 0.90625 16 1.73438 16H12.7344C13.5625 16 14.2344 15.3281 14.2344 14.5V6H0.234375V14.5Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <input type="datetime-local" placeholder="Jul 30, 2025" id="pickupDate"
+                                            class="field-input">
+                                    </div>
+                                </div>
+                                <div class="field-group">
+                                    <label class="field-label">Return Date</label>
+                                    <div class="field-wrapper">
+                                        <svg class="field-icon" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                            <path
+                                                d="M0.234375 14.5C0.234375 15.3281 0.90625 16 1.73438 16H12.7344C13.5625 16 14.2344 15.3281 14.2344 14.5V6H0.234375V14.5Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <input type="datetime-local" placeholder="Select date" id="returnDate"
+                                            class="field-input">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Continue Button -->
+                            <div class="btn-continue" id="nextPageBtn">
+                                <img src="image/search.svg" />
+                                <span>continue</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="facts-bg-pattern">
+        <img src="image/trackMark.svg" alt="Background pattern">
+    </div>
+    <!-- Customer Logos Section -->
+    <section class="customers">
+        <div class="customer__container">
+            <h2 class="section-title-large">Trusted By</h2>
+
+            <div class="customers-scroll-container">
+                <div class="customers-scroll-track">
+                    <!-- First set of logos -->
+                    <div class="customer-logo">
+                        <img src="image/barokpnglogo.png" alt="Customer Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/east_african_holding.png" alt="Barok Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/logo.png" alt="Flint Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/OIP (1).jpg" alt="East African Holding">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/OIP (1).png" alt="TED Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/Screenshot_18-6-2025_20424_.jpeg" alt="Company Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/OSK.png" alt="OIP Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/logo-new-resized-scaled.png" alt="Screenshot Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/34787.jpg" alt="Screenshot Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/flint_logo.png" alt="Screenshot Logo">
+                    </div>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="customer-logo">
+                        <img src="image/barokpnglogo.png" alt="Customer Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/east_african_holding.png" alt="Barok Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/logo.png" alt="Flint Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/OIP (1).jpg" alt="East African Holding">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/OIP (1).png" alt="TED Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/Screenshot_18-6-2025_20424_.jpeg" alt="Company Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/OSK.png" alt="OIP Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/logo-new-resized-scaled.png" alt="Screenshot Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/34787.jpg" alt="Screenshot Logo">
+                    </div>
+                    <div class="customer-logo">
+                        <img src="image/flint_logo.png" alt="Screenshot Logo">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-large">Our Services</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/service1.svg" />
+                    </div>
+                    <h3 class="service-title">Energy Efficient Vehicles</h3>
+                    <p class="service-description">Our fleet consists of the latest energy-efficient models to reduce
+                        environmental impact.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/service2.svg" />
+                    </div>
+                    <h3 class="service-title">Flexible Booking System</h3>
+                    <p class="service-description">Book for hours or days, our flexible system adapts to your schedule
+                        with or with out chauffeur.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/service3.svg" />
+                    </div>
+                    <h3 class="service-title">Convenient Locations</h3>
+                    <p class="service-description">Pick up and drop off from airport to hotel , or other chauffeured
+                        service to any location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facts in Numbers -->
+    <section id="facts" class="facts">
+        <!-- Background pattern -->
+
+        <!-- Background car image -->
+        <div class="facts-bg-car">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/2492ef628f98907a2a088f49e60b0f555d87f42f?width=1598"
+                alt="Background car">
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-large facts-title">Facts in numbers</h2>
+            </div>
+
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="image/fact1.svg" />
+                    </div>
+                    <div class="fact-content">
+                        <div class="fact-number" data-target="40" data-suffix="+">0+</div>
+                        <div class="fact-label">cars</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="image/fact2.svg" />
+                    </div>
+                    <div class="fact-content">
+                        <div class="fact-number" data-target="100" data-suffix="+">0+</div>
+                        <div class="fact-label">customers</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="image/fact3.svg" />
+                    </div>
+                    <div class="fact-content">
+                        <div class="fact-number" data-target="2" data-suffix="+">0+</div>
+                        <div class="fact-label">Years</div>
+                    </div>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="image/fact4.svg" />
+                    </div>
+                    <div class="fact-content">
+                        <div class="fact-number" data-target="1000" data-suffix="+">0+</div>
+                        <div class="fact-label">trips</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-large">Reviews from our customers</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">
+                            <svg width="39" height="32" viewBox="0 0 39 32" fill="none">
+                                <path
+                                    d="M8.62832 32C6.86431 32 5.33038 31.5188 4.02655 30.5564C2.72271 29.5138 1.72566 28.1103 1.0354 26.3459C0.345133 24.5815 0 22.5764 0 20.3308C0 17.604 0.421829 14.9975 1.26549 12.5113C2.18584 9.94486 3.56637 7.57895 5.40708 5.41354C7.24779 3.24812 9.62537 1.44361 12.5398 0L17.3717 4.69173C15.3009 5.41354 13.4602 6.41604 11.8496 7.69925C10.3156 8.98246 9.05015 10.4261 8.0531 12.0301C7.13274 13.6341 6.48083 15.2782 6.09735 16.9624L6.55752 17.203C6.86431 16.9624 7.24779 16.7619 7.70796 16.6015C8.16814 16.4411 8.85841 16.3609 9.77876 16.3609C10.6991 16.3609 11.6578 16.6416 12.6549 17.203C13.6519 17.7644 14.4572 18.6065 15.0708 19.7293C15.7611 20.7719 16.1062 22.1754 16.1062 23.9398C16.1062 25.3835 15.7611 26.7068 15.0708 27.9098C14.4572 29.1128 13.5752 30.1153 12.4248 30.9173C11.2743 31.6391 10.0089 32 8.62832 32ZM30.2566 32C28.4926 32 26.9587 31.5188 25.6549 30.5564C24.351 29.5138 23.354 28.1103 22.6637 26.3459C21.9735 24.5815 21.6283 22.5764 21.6283 20.3308C21.6283 17.604 22.0501 14.9975 22.8938 12.5113C23.8142 9.94486 25.1947 7.57895 27.0354 5.41354C28.8761 3.24812 31.2537 1.44361 34.1681 0L39 4.69173C36.9292 5.41354 35.0885 6.41604 33.4779 7.69925C31.944 8.98246 30.6785 10.4261 29.6814 12.0301C28.7611 13.6341 28.1091 15.2782 27.7257 16.9624L28.1858 17.203C28.4926 16.9624 28.8761 16.7619 29.3363 16.6015C29.7965 16.4411 30.4867 16.3609 31.4071 16.3609C32.3274 16.3609 33.2861 16.6416 34.2832 17.203C35.2802 17.7644 36.0855 18.6065 36.6991 19.7293C37.3894 20.7719 37.7345 22.1754 37.7345 23.9398C37.7345 25.3835 37.3894 26.7068 36.6991 27.9098C36.0855 29.1128 35.2035 30.1153 34.0531 30.9173C32.9027 31.6391 31.6372 32 30.2566 32Z"
+                                    fill="#000" />
+                            </svg>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>GOOD SERVICE</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar"></div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-company">HOLLAND DIARY</div>
+                            <div class="testimonial-name">MEKDES</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">
+                            <svg width="39" height="32" viewBox="0 0 39 32" fill="none">
+                                <path
+                                    d="M8.62832 32C6.86431 32 5.33038 31.5188 4.02655 30.5564C2.72271 29.5138 1.72566 28.1103 1.0354 26.3459C0.345133 24.5815 0 22.5764 0 20.3308C0 17.604 0.421829 14.9975 1.26549 12.5113C2.18584 9.94486 3.56637 7.57895 5.40708 5.41354C7.24779 3.24812 9.62537 1.44361 12.5398 0L17.3717 4.69173C15.3009 5.41354 13.4602 6.41604 11.8496 7.69925C10.3156 8.98246 9.05015 10.4261 8.0531 12.0301C7.13274 13.6341 6.48083 15.2782 6.09735 16.9624L6.55752 17.203C6.86431 16.9624 7.24779 16.7619 7.70796 16.6015C8.16814 16.4411 8.85841 16.3609 9.77876 16.3609C10.6991 16.3609 11.6578 16.6416 12.6549 17.203C13.6519 17.7644 14.4572 18.6065 15.0708 19.7293C15.7611 20.7719 16.1062 22.1754 16.1062 23.9398C16.1062 25.3835 15.7611 26.7068 15.0708 27.9098C14.4572 29.1128 13.5752 30.1153 12.4248 30.9173C11.2743 31.6391 10.0089 32 8.62832 32ZM30.2566 32C28.4926 32 26.9587 31.5188 25.6549 30.5564C24.351 29.5138 23.354 28.1103 22.6637 26.3459C21.9735 24.5815 21.6283 22.5764 21.6283 20.3308C21.6283 17.604 22.0501 14.9975 22.8938 12.5113C23.8142 9.94486 25.1947 7.57895 27.0354 5.41354C28.8761 3.24812 31.2537 1.44361 34.1681 0L39 4.69173C36.9292 5.41354 35.0885 6.41604 33.4779 7.69925C31.944 8.98246 30.6785 10.4261 29.6814 12.0301C28.7611 13.6341 28.1091 15.2782 27.7257 16.9624L28.1858 17.203C28.4926 16.9624 28.8761 16.7619 29.3363 16.6015C29.7965 16.4411 30.4867 16.3609 31.4071 16.3609C32.3274 16.3609 33.2861 16.6416 34.2832 17.203C35.2802 17.7644 36.0855 18.6065 36.6991 19.7293C37.3894 20.7719 37.7345 22.1754 37.7345 23.9398C37.7345 25.3835 37.3894 26.7068 36.6991 27.9098C36.0855 29.1128 35.2035 30.1153 34.0531 30.9173C32.9027 31.6391 31.6372 32 30.2566 32Z"
+                                    fill="#000" />
+                            </svg>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>GOOD SERVICE</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar"></div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-company">NATIONAL TRANSPORT</div>
+                            <div class="testimonial-name">ADDIS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">
+                            <svg width="39" height="32" viewBox="0 0 39 32" fill="none">
+                                <path
+                                    d="M8.62832 32C6.86431 32 5.33038 31.5188 4.02655 30.5564C2.72271 29.5138 1.72566 28.1103 1.0354 26.3459C0.345133 24.5815 0 22.5764 0 20.3308C0 17.604 0.421829 14.9975 1.26549 12.5113C2.18584 9.94486 3.56637 7.57895 5.40708 5.41354C7.24779 3.24812 9.62537 1.44361 12.5398 0L17.3717 4.69173C15.3009 5.41354 13.4602 6.41604 11.8496 7.69925C10.3156 8.98246 9.05015 10.4261 8.0531 12.0301C7.13274 13.6341 6.48083 15.2782 6.09735 16.9624L6.55752 17.203C6.86431 16.9624 7.24779 16.7619 7.70796 16.6015C8.16814 16.4411 8.85841 16.3609 9.77876 16.3609C10.6991 16.3609 11.6578 16.6416 12.6549 17.203C13.6519 17.7644 14.4572 18.6065 15.0708 19.7293C15.7611 20.7719 16.1062 22.1754 16.1062 23.9398C16.1062 25.3835 15.7611 26.7068 15.0708 27.9098C14.4572 29.1128 13.5752 30.1153 12.4248 30.9173C11.2743 31.6391 10.0089 32 8.62832 32ZM30.2566 32C28.4926 32 26.9587 31.5188 25.6549 30.5564C24.351 29.5138 23.354 28.1103 22.6637 26.3459C21.9735 24.5815 21.6283 22.5764 21.6283 20.3308C21.6283 17.604 22.0501 14.9975 22.8938 12.5113C23.8142 9.94486 25.1947 7.57895 27.0354 5.41354C28.8761 3.24812 31.2537 1.44361 34.1681 0L39 4.69173C36.9292 5.41354 35.0885 6.41604 33.4779 7.69925C31.944 8.98246 30.6785 10.4261 29.6814 12.0301C28.7611 13.6341 28.1091 15.2782 27.7257 16.9624L28.1858 17.203C28.4926 16.9624 28.8761 16.7619 29.3363 16.6015C29.7965 16.4411 30.4867 16.3609 31.4071 16.3609C32.3274 16.3609 33.2861 16.6416 34.2832 17.203C35.2802 17.7644 36.0855 18.6065 36.6991 19.7293C37.3894 20.7719 37.7345 22.1754 37.7345 23.9398C37.7345 25.3835 37.3894 26.7068 36.6991 27.9098C36.0855 29.1128 35.2035 30.1153 34.0531 30.9173C32.9027 31.6391 31.6372 32 30.2566 32Z"
+                                    fill="#000" />
+                            </svg>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>GOOD SERVICE</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar"></div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-company">EAST AFRICAN DISTRIBUTION</div>
+                            <div class="testimonial-name">SAMI</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Booking Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How Booking Works</h2>
+                <p class="section-subtitle">Our simple 3-step booking process makes renting a car quick and hassle-free
+                </p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path
+                                d="M20.7272 6C16.6604 6 13.1892 7.43783 10.3135 10.3135C7.43783 13.1892 6 16.6604 6 20.7272C6 24.794 7.43783 28.2652 10.3135 31.1409C13.1892 34.0165 16.6604 35.4544 20.7272 35.4544C24.794 35.4544 28.2652 34.0165 31.1409 31.1409C34.0165 28.2652 35.4544 24.794 35.4544 20.7272C35.4541 16.6605 34.0162 13.1894 31.1406 10.3138C28.265 7.43818 24.7939 6.00026 20.7272 6Z"
+                                stroke="#EAB308" stroke-width="3" />
+                            <path d="M31.7146 31.7148L41.9999 42.0002" stroke="#EAB308" stroke-width="3"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Choose Your Car</h3>
+                    <p class="step-description">Browse our selection of vehicles and select the one that suits your
+                        needs and budget.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path
+                                d="M4.5 12C4.5 9.51472 6.51472 7.5 9 7.5H39C41.4853 7.5 43.5 9.51472 43.5 12V39C43.5 41.4853 41.4853 43.5 39 43.5H9C6.51472 43.5 4.5 41.4853 4.5 39V12Z"
+                                stroke="#EAB308" stroke-width="3" stroke-linejoin="round" />
+                            <circle cx="27.75" cy="21.75" r="2.25" fill="#EAB308" />
+                            <circle cx="35.25" cy="21.75" r="2.25" fill="#EAB308" />
+                            <circle cx="27.75" cy="29.25" r="2.25" fill="#EAB308" />
+                            <circle cx="35.25" cy="29.25" r="2.25" fill="#EAB308" />
+                            <circle cx="12.75" cy="29.25" r="2.25" fill="#EAB308" />
+                            <circle cx="20.25" cy="29.25" r="2.25" fill="#EAB308" />
+                            <circle cx="12.75" cy="36.75" r="2.25" fill="#EAB308" />
+                            <circle cx="20.25" cy="36.75" r="2.25" fill="#EAB308" />
+                            <circle cx="27.75" cy="36.75" r="2.25" fill="#EAB308" />
+                            <path d="M12 4.5V7.5M36 4.5V7.5" stroke="#EAB308" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M43.5 15H4.5" stroke="#EAB308" stroke-width="3" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Select Dates</h3>
+                    <p class="step-description">Pick your preferred pickup and return dates and times from our available
+                        options.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path
+                                d="M24 4.5C13.2478 4.5 4.5 13.2478 4.5 24C4.5 34.7522 13.2478 43.5 24 43.5C34.7522 43.5 43.5 34.7522 43.5 24C43.5 13.2478 34.7522 4.5 24 4.5ZM34.1484 17.4647L21.5484 32.4647C21.4086 32.6312 21.2405 32.7612 21.0441 32.8547C20.8478 32.9481 20.6409 32.9965 20.4234 33H20.3981C20.1855 32.9999 19.9821 32.9566 19.788 32.87C19.5938 32.7835 19.4256 32.6612 19.2834 32.5031L13.8834 26.5031C13.5946 26.1968 13.4588 25.8333 13.4761 25.4126C13.4934 24.9919 13.6585 24.6408 13.9714 24.3591C14.2844 24.0775 14.651 23.9502 15.0711 23.9772C15.4913 24.0042 15.8385 24.1775 16.1128 24.4969L20.3588 29.2144L31.8516 15.5353C32.1198 15.2252 32.4582 15.0539 32.8669 15.0213C33.2756 14.9888 33.6369 15.1043 33.9509 15.368C34.2648 15.6317 34.441 15.9677 34.4795 16.3759C34.5179 16.784 34.4076 17.147 34.1484 17.4647Z"
+                                fill="#EAB308" />
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Confirm Booking</h3>
+                    <p class="step-description">Review your booking details, select any extras, and complete your
+                        reservation.</p>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <a href="vehicles.html">
+                    <div class="btn-book-now">
+                        <span>Book Now</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M6.95312 2.09082L7.64687 1.39707C7.94062 1.10332 8.41563 1.10332 8.70625 1.39707L14.7812 7.46895C15.075 7.7627 15.075 8.2377 14.7812 8.52832L8.70625 14.6033C8.4125 14.8971 7.9375 14.8971 7.64688 14.6033L6.95313 13.9096C6.65625 13.6127 6.6625 13.1283 6.96563 12.8377L10.7312 9.2502H1.75C1.33437 9.2502 1 8.91582 1 8.5002V7.5002C1 7.08457 1.33437 6.7502 1.75 6.7502H10.7312L6.96562 3.1627C6.65937 2.87207 6.65312 2.3877 6.95312 2.09082Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Map -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-large">Find Us</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-title">Contact Us</h3>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path
+                                    d="M8.15625 1.5C5.67188 1.5 3.65625 3.41844 3.65625 5.78125C3.65625 8.5 6.65625 12.8084 7.75781 14.2966C7.85622 14.4318 7.98903 14.4994 8.15625 14.4994C8.32347 14.4994 8.45628 14.4318 8.55469 14.2966C9.65625 12.8091 12.6562 8.50219 12.6562 5.78125C12.6562 3.41844 10.6406 1.5 8.15625 1.5Z"
+                                    stroke="#EAB308" stroke-linejoin="round" />
+                                <circle cx="8.15625" cy="6" r="1.5" stroke="#EAB308" stroke-linejoin="round" />
+                            </svg>
+                            <div>
+                                <p>Addis Ababa Mickey Leland St<span class="text-accent">,</span> NB Business center</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path
+                                    d="M8.15625 2C4.84375 2 2.15625 4.6875 2.15625 8C2.15625 11.3125 4.84375 14 8.15625 14C11.4688 14 14.1562 11.3125 14.1562 8C14.1562 4.6875 11.4688 2 8.15625 2Z"
+                                    stroke="#EAB308" />
+                                <path d="M8.15625 4V8.5H11.1562" stroke="#EAB308" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div>
+                                <p>Mon-Fri <span class="text-accent">-</span> 8am-5am</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M3.33341 3.3335H16.6667C17.5834 3.3335 18.3334 4.0835 18.3334 5.00016V15.0002C18.3334 15.9168 17.5834 16.6668 16.6667 16.6668H3.33341C2.41675 16.6668 1.66675 15.9168 1.66675 15.0002V5.00016C1.66675 4.0835 2.41675 3.3335 3.33341 3.3335Z"
+                                    stroke="#EAB308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.3334 5L10.0001 10.8333L1.66675 5" stroke="#EDBC27" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div>
+                                <p>info@godriveet.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="phone-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <rect width="20" height="20" rx="10" fill="white" />
+                                    <path
+                                        d="M14.9441 12.46V13.96C14.9446 14.0993 14.9161 14.2371 14.8603 14.3647C14.8045 14.4923 14.7227 14.6068 14.6201 14.701C14.5175 14.7951 14.3963 14.8668 14.2644 14.9114C14.1325 14.956 13.9927 14.9726 13.8541 14.96C12.3155 14.7929 10.8376 14.2671 9.53906 13.425C8.33097 12.6574 7.30673 11.6331 6.53906 10.425C5.69405 9.12065 5.16818 7.63555 5.00406 6.09005C4.99156 5.95178 5.008 5.81243 5.05231 5.68086C5.09662 5.54929 5.16784 5.42839 5.26144 5.32586C5.35504 5.22332 5.46896 5.1414 5.59595 5.08531C5.72295 5.02922 5.86023 5.00018 5.99906 5.00005H7.49906C7.74171 4.99766 7.97695 5.08359 8.16094 5.24181C8.34492 5.40004 8.4651 5.61977 8.49906 5.86005C8.56237 6.34008 8.67978 6.81141 8.84906 7.26505C8.91633 7.44401 8.93089 7.63851 8.89101 7.82549C8.85113 8.01247 8.75849 8.1841 8.62406 8.32005L7.98906 8.95505C8.70084 10.2068 9.73729 11.2433 10.9891 11.955L11.6241 11.32C11.76 11.1856 11.9316 11.093 12.1186 11.0531C12.3056 11.0132 12.5001 11.0278 12.6791 11.095C13.1327 11.2643 13.604 11.3817 14.0841 11.445C14.3269 11.4793 14.5488 11.6017 14.7073 11.7888C14.8659 11.9759 14.9501 12.2148 14.9441 12.46Z"
+                                        fill="white" stroke="#EAB308" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p>+251 911 130 416 <span class="text-accent">|</span> +251 173 440 416</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-description">
+                            <p>Our customer service team is ready to assist you with any questions or bookings.</p>
+                            <a href="https://mail.google.com/mail/?view=cm&to=support@godrive.com&su=Customer%20Inquiry&body=Hi%2C%20I%20have%20a%20question%20about%20your%20services."
+                                target="_blank" class="btn-contact">
+                                Contact Us
+                            </a>
+
+
+                            <!-- <button class="btn-contact" onclick="sendEmail()">Contact Us</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.587563576456!2d38.777995811242164!3d9.010043889246745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b850a39eb5b3f%3A0x65997316c3ca1898!2zTkIgQnVzaW5lc3MgQ2VudGVyIHwgQ2hpY2hpbnlhIHwg4Yqk4YqV4YmqIOGLqOGMiOGJoOGLqyDhiJvhiqXhiqjhiI0gfCDhibrhibrhipXhi6s!5e0!3m2!1sen!2set!4v1754209144517!5m2!1sen!2set"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        class="map-image"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="image/doc_2025-06-18_21-13-22-removebg-preview.png" alt="GO Drive Logo">
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Home</a>
+                        <a href="#services" class="footer-link">Service</a>
+                        <a href="#facts" class="footer-link">about us</a>
+                        <a href="#contact" class="footer-link">contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="#services" class="footer-link">Car Rental</a>
+                        <a href="#services" class="footer-link">chauffeur-driven service</a>
+                        <a href="#services" class="footer-link">Airport pick-up And Drop off services</a>
+                        <a href="#services" class="footer-link">corporoate accounts and group bookings, tailored rental
+                            packages.</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <div class="footer-links">
+                        <a href="#contact" class="footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="#" class="footer-link">Terms & Conditions</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-newsletter-text">Subscribe to our newsletter for updates and promotions</p>
+
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <a href="https://mail.google.com/mail/?view=cm&to=support@godrive.com&su=Customer%20Inquiry&body=Hi%2C%20I%20have%20a%20question%20about%20your%20services."
+                            target="_blank" class="newsletter-button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path
+                                    d="M6.95312 2.09082L7.64687 1.39707C7.94062 1.10332 8.41563 1.10332 8.70625 1.39707L14.7812 7.46895C15.075 7.7627 15.075 8.2377 14.7812 8.52832L8.70625 14.6033C8.4125 14.8971 7.9375 14.8971 7.64688 14.6033L6.95313 13.9096C6.65625 13.6127 6.6625 13.1283 6.96563 12.8377L10.7312 9.2502H1.75C1.33437 9.2502 1 8.91582 1 8.5002V7.5002C1 7.08457 1.33437 6.7502 1.75 6.7502H10.7312L6.96562 3.1627C6.65937 2.87207 6.65312 2.3877 6.95312 2.09082Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M15.75 8C15.75 3.71875 12.2812 0.25 8 0.25C3.71875 0.25 0.25 3.71875 0.25 8C0.25 11.8681 3.08406 15.0744 6.78906 15.6562V10.2403H4.82031V8H6.78906V6.2925C6.78906 4.35031 7.94531 3.2775 9.71625 3.2775C10.5644 3.2775 11.4512 3.42875 11.4512 3.42875V5.335H10.4737C9.51125 5.335 9.21094 5.9325 9.21094 6.54531V8H11.3603L11.0166 10.2403H9.21094V15.6562C12.9159 15.0744 15.75 11.8681 15.75 8Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M8.00303 4.40635C6.01553 4.40635 4.4124 6.00947 4.4124 7.99697C4.4124 9.98447 6.01553 11.5876 8.00303 11.5876C9.99053 11.5876 11.5937 9.98447 11.5937 7.99697C11.5937 6.00947 9.99053 4.40635 8.00303 4.40635ZM8.00303 10.3313C6.71865 10.3313 5.66865 9.28447 5.66865 7.99697C5.66865 6.70947 6.71553 5.6626 8.00303 5.6626C9.29053 5.6626 10.3374 6.70947 10.3374 7.99697C10.3374 9.28447 9.2874 10.3313 8.00303 10.3313ZM12.578 4.25947C12.578 4.7251 12.203 5.09697 11.7405 5.09697C11.2749 5.09697 10.903 4.72197 10.903 4.25947C10.903 3.79697 11.278 3.42197 11.7405 3.42197C12.203 3.42197 12.578 3.79697 12.578 4.25947ZM14.9562 5.10947C14.903 3.9876 14.6468 2.99385 13.8249 2.1751C13.0062 1.35635 12.0124 1.1001 10.8905 1.04385C9.73428 0.978223 6.26865 0.978223 5.1124 1.04385C3.99365 1.09697 2.9999 1.35322 2.17803 2.17197C1.35615 2.99072 1.10303 3.98447 1.04678 5.10635C0.981152 6.2626 0.981152 9.72822 1.04678 10.8845C1.0999 12.0063 1.35615 13.0001 2.17803 13.8188C2.9999 14.6376 3.99053 14.8938 5.1124 14.9501C6.26865 15.0157 9.73428 15.0157 10.8905 14.9501C12.0124 14.897 13.0062 14.6407 13.8249 13.8188C14.6437 13.0001 14.8999 12.0063 14.9562 10.8845C15.0218 9.72822 15.0218 6.26572 14.9562 5.10947ZM13.4624 12.1251C13.2187 12.7376 12.7468 13.2095 12.1312 13.4563C11.2093 13.822 9.02178 13.7376 8.00303 13.7376C6.98428 13.7376 4.79365 13.8188 3.8749 13.4563C3.2624 13.2126 2.79053 12.7407 2.54365 12.1251C2.17803 11.2032 2.2624 9.01572 2.2624 7.99697C2.2624 6.97822 2.18115 4.7876 2.54365 3.86885C2.7874 3.25635 3.25928 2.78447 3.8749 2.5376C4.79678 2.17197 6.98428 2.25635 8.00303 2.25635C9.02178 2.25635 11.2124 2.1751 12.1312 2.5376C12.7437 2.78135 13.2155 3.25322 13.4624 3.86885C13.828 4.79072 13.7437 6.97822 13.7437 7.99697C13.7437 9.01572 13.828 11.2063 13.4624 12.1251Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="copyright">
+                    <p>© 2025 GO Drive Car Rental. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Smooth scroll if already on index
+        document.addEventListener("DOMContentLoaded", function () {
+            // Smooth scroll on load if URL has hash
+            const hash = document.querySelector(localStorage.getItem('hash'));
+            if (hash) {
+                setTimeout(() => {
+                    hash.scrollIntoView({behavior: 'smooth'});
+                }, 100);
+                localStorage.removeItem('hash');
+            }
+        });
+        function openForm() {
+            document.getElementById("formOverlay").classList.add("active");
+            document.getElementById("bookingForm").classList.add("active");
+            document.body.style.overflow = "hidden"; // disable scrolling
+        }
+
+        function closeForm() {
+            document.getElementById("formOverlay").classList.remove("active");
+            document.body.style.overflow = ""; // enable scrolling
+        }
+    </script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/newletterSub.js"></script>
+</body>
+
+</html>

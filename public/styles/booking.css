@@ -1,0 +1,270 @@
+.booking {
+    padding-inline: 7rem;
+    background-color: white;
+}
+
+.booking__title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.87rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.booking {
+    flex-direction: column;
+}
+
+.booking .booking__content {
+    margin-top: 0;
+}
+
+.booking__content {
+    gap: 2rem;
+    flex-grow: 1;
+}
+
+.booking__section {
+    border: 1px solid #E5E7EB;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1.52rem;
+    margin-bottom: 2rem;
+    width: 50rem;
+}
+
+.section__title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: left;
+    padding-bottom: .1rem;
+}
+
+.vehicle__container {
+    gap: .5rem;
+}
+
+.vehicle__image {
+    width: 16rem;
+}
+
+.vehicle__info {
+    margin-top: .9rem;
+    flex-grow: 1;
+}
+
+.vehicle__name__price {
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.vehicle__name {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.12rem;
+}
+
+.vehicle__price {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.vehicle__price__per {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: .87rem;
+    color: #6B7280;
+    margin-block: auto;
+}
+
+.vehicle__stats {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: .87rem;
+    color: #4B5563;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.vehicle__stat {
+    gap: .25rem;
+}
+
+.vehicle__features {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: .75rem;
+    gap: .5rem;
+}
+
+.rental-period__container {
+    justify-content: space-between;
+    margin-top: 1rem;
+    flex-grow: 1;
+}
+
+.rental-period__label {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.rental-period__item {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    color: #1F2937;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.rental-period__icon {
+    width: 1rem;
+}
+
+.location__container {
+    margin-top: 1rem;
+    gap: .5rem;
+}
+
+.location__icon {
+    margin-bottom: auto;
+}
+
+.location__info {
+    padding: 0;
+}
+
+.location__name,
+.location__address {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.location__address {
+    font-weight: 400;
+    color: #4B5563;
+}
+
+.summary__items {
+    margin-top: 1.1rem;
+}
+
+.summary__item,
+.summary__total {
+    justify-content: space-between;
+}
+
+.summary__item {
+    margin-bottom: .75rem;
+}
+
+.summary__label,
+.summary__value {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.summary__label {
+    color: #4B5563;
+}
+
+.summary__total {
+    padding-top: .8rem;
+    border-top: 1px solid #E5E7EB;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.summary__cta {
+    background-color: black;
+    color: white;
+    padding-block: .75rem;
+    width: 100%;
+    text-align: center;
+    border-radius: .4rem;
+    margin-top: 3.5rem;
+}
+
+.summary__terms {
+    margin-top: 1.25rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: .87rem;
+    color: #4B5563;
+    width: 45ch;
+}
+
+.summary__terms-link {
+    color: #EAB308;
+    margin-bottom: .8rem;
+}
+
+.booking__form .section__title {
+    font-weight: 700;
+    font-size: .87rem;
+    color: #48494B;
+    margin-bottom: 1.4rem;
+}
+
+.form__group {
+    position: relative;
+    width: fit-content;
+}
+
+.form__group>.form__input {
+    border: 1px solid #DADADA;
+    background-color: white;
+    margin-bottom: 1.4rem;
+    border-radius: .4rem;
+}
+
+.form__group>.form__input::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: .87rem;
+}
+
+.form__icon {
+    position: absolute;
+    right: 1.1rem;
+    top: 18%;
+}
+
+.form__note {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    color: #6B7280;
+    gap: .2rem;
+}
+
+.form__note .hash {
+    font-weight: 700;
+    color: #806B6B;
+}
+
+@media (max-width: 768px) {
+    .booking {
+        padding-inline: 1.5rem;
+    }
+
+    .booking__content {
+        flex-direction: column-reverse;
+    }
+
+    .vehicle__container,
+    .rental-period__container {
+        flex-direction: column;
+    }
+
+    .booking__section {
+        width: 100%;
+    }
+}

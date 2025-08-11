@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/thankyou.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Inria+Serif:wght@400;700&family=Work+Sans:wght@400;500;600;700&family=Adamina:wght@400&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="thankyou">
+        <div class="thankyou__icon__container flex">
+            <img src="image/check.svg" alt="Success Icon" class="thankyou__icon" />
+        </div>
+        <p class="thankyou__title">Thank You!</p>
+        <p class="thankyou__message">Your booking has been received successfully</p>
+
+        <div class="thankyou__summary">
+            <p class="thankyou__summary-title">Submission Summary</p>
+            <div class="thankyou__summary-details">
+                <div class="thankyou__summary-item">
+                    <p class="thankyou__summary-label">Confirmation Number</p>
+                    <p class="thankyou__summary-value">GD-01-2015</p>
+                </div>
+                <div class="thankyou__summary-item">
+                    <p class="thankyou__summary-label">Date & Time</p>
+                    <p id="pickupDate" class="thankyou__summary-value">JULY 31, 2025 * 10:23 AM</p>
+                </div>
+                <div class="thankyou__summary-item">
+                    <p class="thankyou__summary-label">Booking Type</p>
+                    <p class="thankyou__summary-value">Short</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="thankyou__next-title">What happens next</p>
+        <div class="thankyou__steps">
+            <div class="thankyou__step">
+                <div class="thankyou__step-icon-wrap">
+                    <img src="image/thankyouEmail.svg" alt="Email Icon" class="thankyou__step-icon" />
+                </div>
+                <p class="thankyou__step-title">Email Confirmation</p>
+                <p class="thankyou__step-text">We've sent a confirmation email to your registered email address</p>
+            </div>
+            <div class="thankyou__step">
+                <div class="thankyou__step-icon-wrap">
+                    <img src="image/thankyouClock.svg" alt="Processing Icon" class="thankyou__step-icon" />
+                </div>
+                <p class="thankyou__step-title">Processing</p>
+                <p class="thankyou__step-text">Your request is being processed. This typically takes 1-5 hour.</p>
+            </div>
+            <div class="thankyou__step">
+                <div class="thankyou__step-icon-wrap">
+                    <img src="image/thankyouBox.svg" alt="Completion Icon" class="thankyou__step-icon" />
+                </div>
+                <p class="thankyou__step-title">Completion</p>
+                <p class="thankyou__step-text">Once processed, you will receive a notification with next steps.</p>
+            </div>
+        </div>
+
+        <a href="index.html">
+            <div class="thankyou__home-btn">
+                <p class="return__link">Return to Home</p>
+            </div>
+        </a>
+    </div>
+    <script>
+        document.getElementById('pickupDate').textContent = (localStorage.getItem('pickupDate') || '') + " * " + (localStorage.getItem('pickupTime') || '');
+    </script>
+</body>
+
+</html>

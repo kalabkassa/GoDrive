@@ -1,0 +1,279 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/booking.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Inria+Serif:wght@400;700&family=Work+Sans:wght@400;500;600;700&family=Adamina:wght@400&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-section logo-section">
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="image/doc_2025-06-18_21-13-22-removebg-preview.png" alt="GO Drive Logo">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="nav-mobile-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#facts" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <div class="nav-section nav-links-section">
+                    <nav class="nav-desktop">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#facts" class="nav-link">About</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </nav>
+                </div>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="booking flex">
+        <p class="booking__title">Complete Your Booking</p>
+
+        <div class="booking__content flex">
+
+            <!-- LEFT SIDE: Booking Details -->
+            <div class="booking__details">
+
+                <!-- Selected Vehicle -->
+                <div class="booking__section booking__vehicle">
+                    <p class="section__title">Selected Vehicle</p>
+                    <div class="vehicle__container flex">
+                        <img src="image/Dezire.png" class="vehicle__image" />
+                        <div class="vehicle__info">
+                            <div class="vehicle__name__price flex">
+                                <p class="vehicle__name">Dezire</p>
+                                <div class="flex">
+                                    <p class="vehicle__price">Br. 00</p>
+                                    <p class="vehicle__price__per">/day</p>
+                                </div>
+                            </div>
+                            <div class="vehicle__stats flex">
+                                <div class="vehicle__stat flex">
+                                    <img src="image/group.svg" class="vehicle__stat-icon" />
+                                    <p class="vehicle__stat-text">4</p>
+                                </div>
+                                <div class="vehicle__stat flex">
+                                    <img src="image/wheel.svg" class="vehicle__stat-icon" />
+                                    <p class="vehicle__stat-text">Automatic</p>
+                                </div>
+                            </div>
+                            <div class="vehicle__features flex">
+                                <p class="vehicle__feature">Automobile</p>
+                                <p class="vehicle__feature">Air Conditioning</p>
+                                <p class="vehicle__feature">Navigation</p>
+                                <p class="vehicle__feature">Bluetooth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rental Period -->
+                <div class="booking__section booking__rental-period">
+                    <p class="section__title">Rental Period</p>
+                    <div class="rental-period__container flex">
+
+                        <div class="rental-period__block">
+                            <p class="rental-period__label">Pickup Date & Time</p>
+                            <div class="rental-period__details">
+                                <div class="rental-period__item flex">
+                                    <img src="image/calander.svg" class="rental-period__icon" />
+                                    <p id="pickupDate" class="rental-period__text">Wednesday, July 30, 2025</p>
+                                </div>
+                                <div class="rental-period__item flex">
+                                    <img src="image/clock.svg" class="rental-period__icon" />
+                                    <p id="pickupTime" class="rental-period__text">10:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rental-period__block">
+                            <p class="rental-period__label">Return Date & Time</p>
+                            <div class="rental-period__details">
+                                <div class="rental-period__item flex">
+                                    <img src="image/calander.svg" class="rental-period__icon" />
+                                    <p id="returnDate" class="rental-period__text">Thursday, July 31, 2025</p>
+                                </div>
+                                <div class="rental-period__item flex">
+                                    <img src="image/clock.svg" class="rental-period__icon" />
+                                    <p id="returnTime" class="rental-period__text">10:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Pickup & Return Location -->
+                <div class="booking__section booking__location">
+                    <p class="section__title">Pickup & Return Location</p>
+                    <div class="location__container flex">
+                        <img src="image/location.svg" class="location__icon" />
+                        <div class="location__info">
+                            <p class="location__name">Office</p>
+                            <p class="location__address">Street, City center</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Summary -->
+                <div class="booking__summary">
+                    <p class="section__title">Booking Summary</p>
+                    <div class="summary__items">
+                        <div class="summary__item flex">
+                            <p class="summary__label">Car Rental (1 day)</p>
+                            <p class="summary__value">Br. 00</p>
+                        </div>
+                        <div class="summary__item flex">
+                            <p class="summary__label">Taxes & Fees</p>
+                            <p class="summary__value">Br. 00</p>
+                        </div>
+                    </div>
+                    <div class="summary__total flex">
+                        <p class="summary__total-label">Total</p>
+                        <p class="summary__total-value">Br. 00</p>
+                    </div>
+                    <div id="nextPage" class="summary__cta">
+                        <p class="summary__cta-text">Complete Booking</p>
+                    </div>
+                    <p class="summary__terms">
+                        By completing this booking, you agree to our
+                        <a href="#" class="summary__terms-link">Terms & Conditions</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE: Basic Information Form -->
+            <div class="booking__form">
+                <p class="section__title">Basic Information</p>
+                <form class="form">
+                    <div class="form__group">
+                        <input id="fullName" placeholder="Full Name *" class="form__input" />
+                        <img src="image/user.svg" class="form__icon" />
+                    </div>
+                    <div class="form__group">
+                        <input id="email" placeholder="Email Address *" class="form__input" />
+                        <img src="image/email.svg" class="form__icon" />
+                    </div>
+                    <div class="form__group">
+                        <input id="phone" placeholder="Phone Number *" class="form__input" />
+                        <img src="image/phone.svg" class="form__icon" />
+                    </div>
+                    <div class="form__note flex">
+                        <p class="hash">#</p>
+                        <p>Include country code for international numbers</p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="image/doc_2025-06-18_21-13-22-removebg-preview.png" alt="GO Drive Logo">
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="#services" class="nav-link footer-link">Service</a>
+                        <a href="#facts" class="nav-link footer-link">about us</a>
+                        <a href="#contact" class="nav-link footer-link">contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="#services" class="nav-link footer-link">Car Rental</a>
+                        <a href="#services" class="nav-link footer-link">chauffeur-driven service</a>
+                        <a href="#services" class="nav-link footer-link">Airport pick-up And Drop off services</a>
+                        <a href="#services" class="nav-link footer-link">corporoate accounts and group bookings,
+                            tailored rental
+                            packages.</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <div class="footer-links">
+                        <a href="#contact" class="nav-link footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="#" class="footer-link">Terms & Conditions</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-newsletter-text">Subscribe to our newsletter for updates and promotions</p>
+
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <a href="https://mail.google.com/mail/?view=cm&to=support@godrive.com&su=Customer%20Inquiry&body=Hi%2C%20I%20have%20a%20question%20about%20your%20services."
+                            target="_blank" class="newsletter-button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path
+                                    d="M6.95312 2.09082L7.64687 1.39707C7.94062 1.10332 8.41563 1.10332 8.70625 1.39707L14.7812 7.46895C15.075 7.7627 15.075 8.2377 14.7812 8.52832L8.70625 14.6033C8.4125 14.8971 7.9375 14.8971 7.64688 14.6033L6.95313 13.9096C6.65625 13.6127 6.6625 13.1283 6.96563 12.8377L10.7312 9.2502H1.75C1.33437 9.2502 1 8.91582 1 8.5002V7.5002C1 7.08457 1.33437 6.7502 1.75 6.7502H10.7312L6.96562 3.1627C6.65937 2.87207 6.65312 2.3877 6.95312 2.09082Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M15.75 8C15.75 3.71875 12.2812 0.25 8 0.25C3.71875 0.25 0.25 3.71875 0.25 8C0.25 11.8681 3.08406 15.0744 6.78906 15.6562V10.2403H4.82031V8H6.78906V6.2925C6.78906 4.35031 7.94531 3.2775 9.71625 3.2775C10.5644 3.2775 11.4512 3.42875 11.4512 3.42875V5.335H10.4737C9.51125 5.335 9.21094 5.9325 9.21094 6.54531V8H11.3603L11.0166 10.2403H9.21094V15.6562C12.9159 15.0744 15.75 11.8681 15.75 8Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M8.00303 4.40635C6.01553 4.40635 4.4124 6.00947 4.4124 7.99697C4.4124 9.98447 6.01553 11.5876 8.00303 11.5876C9.99053 11.5876 11.5937 9.98447 11.5937 7.99697C11.5937 6.00947 9.99053 4.40635 8.00303 4.40635ZM8.00303 10.3313C6.71865 10.3313 5.66865 9.28447 5.66865 7.99697C5.66865 6.70947 6.71553 5.6626 8.00303 5.6626C9.29053 5.6626 10.3374 6.70947 10.3374 7.99697C10.3374 9.28447 9.2874 10.3313 8.00303 10.3313ZM12.578 4.25947C12.578 4.7251 12.203 5.09697 11.7405 5.09697C11.2749 5.09697 10.903 4.72197 10.903 4.25947C10.903 3.79697 11.278 3.42197 11.7405 3.42197C12.203 3.42197 12.578 3.79697 12.578 4.25947ZM14.9562 5.10947C14.903 3.9876 14.6468 2.99385 13.8249 2.1751C13.0062 1.35635 12.0124 1.1001 10.8905 1.04385C9.73428 0.978223 6.26865 0.978223 5.1124 1.04385C3.99365 1.09697 2.9999 1.35322 2.17803 2.17197C1.35615 2.99072 1.10303 3.98447 1.04678 5.10635C0.981152 6.2626 0.981152 9.72822 1.04678 10.8845C1.0999 12.0063 1.35615 13.0001 2.17803 13.8188C2.9999 14.6376 3.99053 14.8938 5.1124 14.9501C6.26865 15.0157 9.73428 15.0157 10.8905 14.9501C12.0124 14.897 13.0062 14.6407 13.8249 13.8188C14.6437 13.0001 14.8999 12.0063 14.9562 10.8845C15.0218 9.72822 15.0218 6.26572 14.9562 5.10947ZM13.4624 12.1251C13.2187 12.7376 12.7468 13.2095 12.1312 13.4563C11.2093 13.822 9.02178 13.7376 8.00303 13.7376C6.98428 13.7376 4.79365 13.8188 3.8749 13.4563C3.2624 13.2126 2.79053 12.7407 2.54365 12.1251C2.17803 11.2032 2.2624 9.01572 2.2624 7.99697C2.2624 6.97822 2.18115 4.7876 2.54365 3.86885C2.7874 3.25635 3.25928 2.78447 3.8749 2.5376C4.79678 2.17197 6.98428 2.25635 8.00303 2.25635C9.02178 2.25635 11.2124 2.1751 12.1312 2.5376C12.7437 2.78135 13.2155 3.25322 13.4624 3.86885C13.828 4.79072 13.7437 6.97822 13.7437 7.99697C13.7437 9.01572 13.828 11.2063 13.4624 12.1251Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="copyright">
+                    <p>© 2025 GO Drive Car Rental. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/booking.js">
+    </script>
+    <script src="scripts/newletterSub.js"></script>
+</body>
+
+</html>

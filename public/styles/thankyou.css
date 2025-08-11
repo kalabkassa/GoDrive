@@ -1,0 +1,139 @@
+.thankyou {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.thankyou__icon__container {
+    background-color: black;
+    border-radius: 50%;
+    width: 6rem;
+    aspect-ratio: 1;
+    align-content: center;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.thankyou__title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1F2937;
+}
+
+.thankyou__message {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #4B5563;
+    margin-bottom: 3rem;
+}
+
+.thankyou__summary {
+    background-color: #F9FAFB;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.thankyou__summary-title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1F2937;
+}
+
+.thankyou__summary-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thankyou__summary-label {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: .87rem;
+    color: #6B7280;
+}
+
+.thankyou__summary-value {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1F2937;
+}
+
+.thankyou__next-title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1F2937;
+    margin-bottom: 1.5rem;
+}
+
+.thankyou__steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thankyou__step {
+    padding: 1.5rem;
+    border-radius: .75rem;
+    justify-items: center;
+    border: 1px solid #E5E7EB;
+}
+
+.thankyou__step-icon-wrap {
+    background-color: #FDD835;
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+}
+
+.thankyou__step-title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1F2937;
+    margin-bottom: .5rem;
+}
+
+.thankyou__step-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    color: #4B5563;
+    width: 25ch;
+}
+
+.thankyou__home-btn {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    padding-block: .7rem;
+    padding-inline: 4rem;
+    border-radius: .5rem;
+    margin-block: 3rem;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.return__link {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .thankyou__summary-details,
+    .thankyou__steps {
+        flex-direction: column;
+    }
+
+    .thankyou__steps {
+        gap: 1rem;
+    }
+}
