@@ -15,8 +15,8 @@ A simple Node.js server using Express and Nodemailer to send emails from a conta
    git clone https://github.com/yourusername/your-repo.git
    cd your-repo
 
-2. Create a .env file to setup email
-     eg.
+2. Create a .env file to setup email:
+   
    ```config
          SMTP_HOST=smtp.example.com
          SMTP_PORT=465
@@ -25,4 +25,5 @@ A simple Node.js server using Express and Nodemailer to send emails from a conta
          RECEIVER_EMAIL=someone@example.com
 
 4. run the server with
-    npm start
+   
+       npm start
