@@ -9,7 +9,7 @@ document.querySelector('.newsletter-button').addEventListener('click', function(
         return;
     }
 
-    fetch('http://localhost:3000/newsletter', {
+    fetch('https://godriveet.com/newsletter', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
