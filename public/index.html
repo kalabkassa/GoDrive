@@ -13,16 +13,25 @@
         href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Inria+Serif:wght@400;700&family=Work+Sans:wght@400;500;600;700&family=Adamina:wght@400&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
+<!-- WhatsApp Chat Button -->
+<a href="https://wa.me/0946618040" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path
+            d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z" />
+    </svg>
+</a>
 
 <body>
     <!-- Header -->
     <header class="header">
+        <div class="yellowSpace"></div>
         <div class="container">
             <div class="nav-wrapper">
                 <div class="nav-section logo-section">
                     <a href="index.html">
                         <div class="logo">
-                            <img loading="lazy" src="image/doc_2025-06-18_21-13-22-removebg-preview.png" alt="GO Drive Logo">
+                            <img loading="lazy" src="image/logo1.png" alt="GO Drive Logo">
                         </div>
                     </a>
                 </div>
@@ -36,6 +45,7 @@
                         <div class="btn-book-now">Book Now</div>
                     </a>
                 </div>
+
 
                 <div class="nav-section nav-links-section">
                     <nav class="nav-desktop">
@@ -64,112 +74,103 @@
                 </button>
             </div>
         </div>
-        </div>
     </header>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
-        <!-- Yellow accent background -->
-        <div class="hero-bg-yellow"></div>
 
         <!-- Hero car image -->
         <!-- <div class="hero-car">
             <img src="image/heroimg.png" alt="Hero Car">
         </div> -->
 
+        <!-- scattered patterns -->
+        <img src="image/FRAME.svg" alt="pattern" class="pattern pattern-1">
+        <img src="image/heroBG.svg" alt="pattern" class="pattern pattern-2">
+        <img src="image/heroBG1.svg" alt="pattern" class="pattern pattern-3">
+        <img src="image/heroBG2.svg" alt="pattern" class="pattern pattern-3">
+        <img src="image/heroBG3.svg" alt="pattern" class="pattern pattern-3">
+
         <div class="container hero-content">
             <div class="hero-grid">
                 <!-- Column 1: Text -->
                 <div class="hero-left">
                     <h1 class="hero-title">
-                        <span class="hero-title-line1">Beyond Cars</span>
-                        <span class="flex">
-                            <span class="hero-title-line2">Creating Journeys</span>
-                            <span class="closing-quote">
-                                <svg width="40" height="40" viewBox="0 0 39 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g transform="scale(-1,1) translate(-39,0)">
-                                        <path
-                                            d="M8.62832 32C6.86431 32 5.33038 31.5188 4.02655 30.5564C2.72271 29.5138 1.72566 28.1103 1.0354 26.3459C0.345133 24.5815 0 22.5764 0 20.3308C0 17.604 0.421829 14.9975 1.26549 12.5113C2.18584 9.94486 3.56637 7.57895 5.40708 5.41354C7.24779 3.24812 9.62537 1.44361 12.5398 0L17.3717 4.69173C15.3009 5.41354 13.4602 6.41604 11.8496 7.69925C10.3156 8.98246 9.05015 10.4261 8.0531 12.0301C7.13274 13.6341 6.48083 15.2782 6.09735 16.9624L6.55752 17.203C6.86431 16.9624 7.24779 16.7619 7.70796 16.6015C8.16814 16.4411 8.85841 16.3609 9.77876 16.3609C10.6991 16.3609 11.6578 16.6416 12.6549 17.203C13.6519 17.7644 14.4572 18.6065 15.0708 19.7293C15.7611 20.7719 16.1062 22.1754 16.1062 23.9398C16.1062 25.3835 15.7611 26.7068 15.0708 27.9098C14.4572 29.1128 13.5752 30.1153 12.4248 30.9173C11.2743 31.6391 10.0089 32 8.62832 32ZM30.2566 32C28.4926 32 26.9587 31.5188 25.6549 30.5564C24.351 29.5138 23.354 28.1103 22.6637 26.3459C21.9735 24.5815 21.6283 22.5764 21.6283 20.3308C21.6283 17.604 22.0501 14.9975 22.8938 12.5113C23.8142 9.94486 25.1947 7.57895 27.0354 5.41354C28.8761 3.24812 31.2537 1.44361 34.1681 0L39 4.69173C36.9292 5.41354 35.0885 6.41604 33.4779 7.69925C31.944 8.98246 30.6785 10.4261 29.6814 12.0301C28.7611 13.6341 28.1091 15.2782 27.7257 16.9624L28.1858 17.203C28.4926 16.9624 28.8761 16.7619 29.3363 16.6015C29.7965 16.4411 30.4867 16.3609 31.4071 16.3609C32.3274 16.3609 33.2861 16.6416 34.2832 17.203C35.2802 17.7644 36.0855 18.6065 36.6991 19.7293C37.3894 20.7719 37.7345 22.1754 37.7345 23.9398C37.7345 25.3835 37.3894 26.7068 36.6991 27.9098C36.0855 29.1128 35.2035 30.1153 34.0531 30.9173C32.9027 31.6391 31.6372 32 30.2566 32Z"
-                                            fill="black" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </span>
+                        <span class="hero-title">Beyond <p>cars creating</p> journey“</span>
                     </h1>
                 </div>
 
                 <!-- Column 2: Car image -->
-                <div class="hero-right">
-                    <img loading="lazy" src="image/heroimg.png" alt="Hero Car" class="hero-img" />
+            </div>
+            <div class="hero-imgs">
+                <img loading="lazy" src="image/hero3.png" alt="Hero Car" class="hero-img" />
+                <img loading="lazy" src="image/hero1.png" alt="Hero Car" class="hero-img" />
+                <img loading="lazy" src="image/hero2.png" alt="Hero Car" class="hero-img" />
+            </div>
+            <div onclick="openForm()" class="bookNow">
+                <p>BOOK NOW!</p>
+            </div>
+            <!-- Booking Form positioned at bottom -->
+            <div class="hero-booking">
+                <div class="overlay" id="formOverlay">
                 </div>
-                <!-- Booking Form positioned at bottom -->
-                <div class="hero-booking">
-                    <button onclick="openForm()" class="booking-cta">
-                        <p>Book</p>
-                    </button>
-                    <div class="overlay" id="formOverlay">
-                    </div>
-                    <div class="booking-form" id="bookingForm">
-                        <h3 class="booking-title">Find your perfect car</h3>
+                <div class="booking-form" id="bookingForm">
+                    <form class="booking-fields">
+                        <!-- Pickup Location -->
+                        <div class="field-group">
+                            <label class="field-label">Pickup Location</label>
+                            <div class="field-wrapper">
+                                <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M8.15625 1.5C5.67188 1.5 3.65625 3.41844 3.65625 5.78125C3.65625 8.5 6.65625 12.8084 7.75781 14.2966C7.85622 14.4318 7.98903 14.4994 8.15625 14.4994C8.32347 14.4994 8.45628 14.4318 8.55469 14.2966C9.65625 12.8091 12.6562 8.50219 12.6562 5.78125C12.6562 3.41844 10.6406 1.5 8.15625 1.5Z"
+                                        stroke="#6B7280" stroke-linejoin="round" />
+                                    <circle cx="8.15625" cy="6" r="1.5" stroke="#6B7280" stroke-linejoin="round" />
+                                </svg>
+                                <select class="field-input select-input">
+                                    <option>ADDIS ABABA</option>
+                                </select>
+                                <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path
+                                        d="M2.64648 4.85359L3.35359 4.14648L6.00004 6.79293L8.64649 4.14649L9.3536 4.85359L6.00005 8.20714L2.64648 4.85359Z"
+                                        fill="#1F2937" />
+                                </svg>
+                            </div>
+                        </div>
 
-                        <form class="booking-fields">
-                            <!-- Pickup Location -->
+                        <!-- Date Selection -->
+                        <div class="date-fields">
                             <div class="field-group">
-                                <label class="field-label">Pickup Location</label>
+                                <label class="field-label">Pickup Date</label>
                                 <div class="field-wrapper">
-                                    <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <svg class="field-icon" width="15" height="16" viewBox="0 0 15 16" fill="none">
                                         <path
-                                            d="M8.15625 1.5C5.67188 1.5 3.65625 3.41844 3.65625 5.78125C3.65625 8.5 6.65625 12.8084 7.75781 14.2966C7.85622 14.4318 7.98903 14.4994 8.15625 14.4994C8.32347 14.4994 8.45628 14.4318 8.55469 14.2966C9.65625 12.8091 12.6562 8.50219 12.6562 5.78125C12.6562 3.41844 10.6406 1.5 8.15625 1.5Z"
-                                            stroke="#6B7280" stroke-linejoin="round" />
-                                        <circle cx="8.15625" cy="6" r="1.5" stroke="#6B7280" stroke-linejoin="round" />
+                                            d="M0.234375 14.5C0.234375 15.3281 0.90625 16 1.73438 16H12.7344C13.5625 16 14.2344 15.3281 14.2344 14.5V6H0.234375V14.5Z"
+                                            fill="#6B7280" />
                                     </svg>
-                                    <select class="field-input select-input">
-                                        <option>ADDIS ABABA</option>
-                                    </select>
-                                    <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <input type="datetime-local" placeholder="Jul 30, 2025" id="pickupDate"
+                                        class="field-input">
+                                </div>
+                            </div>
+                            <div class="field-group">
+                                <label class="field-label">Return Date</label>
+                                <div class="field-wrapper">
+                                    <svg class="field-icon" width="15" height="16" viewBox="0 0 15 16" fill="none">
                                         <path
-                                            d="M2.64648 4.85359L3.35359 4.14648L6.00004 6.79293L8.64649 4.14649L9.3536 4.85359L6.00005 8.20714L2.64648 4.85359Z"
-                                            fill="#1F2937" />
+                                            d="M0.234375 14.5C0.234375 15.3281 0.90625 16 1.73438 16H12.7344C13.5625 16 14.2344 15.3281 14.2344 14.5V6H0.234375V14.5Z"
+                                            fill="#6B7280" />
                                     </svg>
+                                    <input type="datetime-local" placeholder="Select date" id="returnDate"
+                                        class="field-input">
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Date Selection -->
-                            <div class="date-fields">
-                                <div class="field-group">
-                                    <label class="field-label">Pickup Date</label>
-                                    <div class="field-wrapper">
-                                        <svg class="field-icon" width="15" height="16" viewBox="0 0 15 16" fill="none">
-                                            <path
-                                                d="M0.234375 14.5C0.234375 15.3281 0.90625 16 1.73438 16H12.7344C13.5625 16 14.2344 15.3281 14.2344 14.5V6H0.234375V14.5Z"
-                                                fill="#6B7280" />
-                                        </svg>
-                                        <input type="datetime-local" placeholder="Jul 30, 2025" id="pickupDate"
-                                            class="field-input">
-                                    </div>
-                                </div>
-                                <div class="field-group">
-                                    <label class="field-label">Return Date</label>
-                                    <div class="field-wrapper">
-                                        <svg class="field-icon" width="15" height="16" viewBox="0 0 15 16" fill="none">
-                                            <path
-                                                d="M0.234375 14.5C0.234375 15.3281 0.90625 16 1.73438 16H12.7344C13.5625 16 14.2344 15.3281 14.2344 14.5V6H0.234375V14.5Z"
-                                                fill="#6B7280" />
-                                        </svg>
-                                        <input type="datetime-local" placeholder="Select date" id="returnDate"
-                                            class="field-input">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Continue Button -->
-                            <div class="btn-continue" id="nextPageBtn">
-                                <img loading="lazy" src="image/search.svg" />
-                                <span>continue</span>
-                            </div>
-                        </form>
-                    </div>
+                        <!-- Continue Button -->
+                        <div class="btn-continue" id="nextPageBtn">
+                            <img loading="lazy" src="image/search.svg" />
+                            <span>continue</span>
+                        </div>
+                    </form>
                 </div>
             </div>
     </section>
@@ -297,7 +298,8 @@
 
         <!-- Background car image -->
         <div class="facts-bg-car">
-            <img loading="lazy" src="https://api.builder.io/api/v1/image/assets/TEMP/2492ef628f98907a2a088f49e60b0f555d87f42f?width=1598"
+            <img loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/TEMP/2492ef628f98907a2a088f49e60b0f555d87f42f?width=1598"
                 alt="Background car">
         </div>
 

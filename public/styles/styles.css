@@ -15,8 +15,6 @@ body {
 
 /* Container */
 .container {
-    max-width: 1280px;
-    margin: 0 auto;
     padding: 0 1rem;
 }
 
@@ -85,20 +83,27 @@ body {
     z-index: 50;
 }
 
+.yellowSpace {
+    background-color: #FDD835;
+    height: 1rem;
+}
 
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 0.3rem 1.5rem;
     background-color: white;
     position: relative;
     /* Essential for positioning the mobile menu */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .logo img {
-    height: 3rem;
+    position: absolute;
+    top: 0;
+    height: 5rem;
     width: auto;
     display: block;
     /* Removes extra space below image */
@@ -187,13 +192,13 @@ body {
     flex-direction: column;
     gap: 1rem;
     background-color: white;
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
     right: 0;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 999;
 }
 
 /* Show mobile menu when active */
@@ -220,10 +225,6 @@ body {
 @media (min-width: 768px) {
 
     .booking-cta {
-        display: none;
-    }
-
-    .closing-quote {
         display: none;
     }
 
@@ -330,7 +331,7 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(to right, #F9FAFB, #F3F4F6);
+    background: #FDD835;
     overflow: hidden;
 }
 
@@ -360,26 +361,126 @@ body {
 .hero-content {
     position: relative;
     z-index: 20;
-    padding: 4rem 0 8rem;
 }
 
 .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 2rem;
+    display: flex;
+}
+
+
+.hero-imgs {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    /* create positioning context */
+    width: 50rem;
+    /* adjust based on your design */
+    height: 20rem;
+    /* enough to fit the cars */
 }
 
 .hero-img {
-    width: 40rem;
+    margin-block: auto;
+    position: absolute;
+    /* allow overlap */
+    top: 0;
+    left: 0;
+    width: 50rem;
     height: auto;
     object-fit: contain;
-    /* transform: scale(1.1);  */
+}
+
+.hero-imgs img:nth-child(1) {
+    top: 2rem;
+    left: -25rem;
+    /* shift left car */
+    z-index: 1;
+    transform: scale(.6);
+}
+
+.hero-imgs img:nth-child(2) {
+    /* middle car */
+    left: -10rem;
+    top: 0;
+    z-index: 3;
+    /* highest — in front */
+}
+
+.hero-imgs img:nth-child(3) {
+    top: -2rem;
+    left: 8rem;
+    /* shift right car */
+    z-index: 2;
+    transform: scale(.6);
 }
 
 .hero-right {
-    transform: translateX(100vw);
     animation: driveInFromRight 1.5s ease-out forwards;
+}
+
+@media (max-width:770px) {
+    .hero-imgs {
+        transform: scale(.8);
+    }
+
+    .hero-imgs img:nth-child(1) {
+        top: 2rem;
+        left: -25rem;
+        /* shift left car */
+        z-index: 1;
+        transform: scale(.6);
+    }
+
+    .hero-imgs img:nth-child(2) {
+        /* middle car */
+        left: -2rem;
+        top: 0;
+        z-index: 3;
+        /* highest — in front */
+    }
+
+    .hero-imgs img:nth-child(3) {
+        top: -2rem;
+        left: 8rem;
+        /* shift right car */
+        z-index: 2;
+        transform: scale(.6);
+    }
+}
+
+
+/* Scattered background patterns */
+.pattern {
+    position: absolute;
+    opacity: 0.3;
+    /* keep subtle */
+    z-index: 100;
+    /* always behind cars & text */
+    width: 6rem;
+    height: auto;
+}
+
+.pattern-1 {
+    top: 2rem;
+    left: 5%;
+    width: 80rem;
+}
+
+.pattern-2 {
+    bottom: 3rem;
+    right: 10%;
+    width: 40rem;
+    top: 20%;
+}
+
+.pattern-3 {
+    top: 20%;
+    left: 40%;
+}
+
+.pattern-4 {
+    top: 20%;
+    left: 40%;
 }
 
 @keyframes driveInFromRight {
@@ -406,28 +507,14 @@ body {
 
 @media (min-width: 768px) {
 
-    .hero-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-    }
-
-    .hero-left {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
     .hero-right {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
         display: flex;
+        width: fit-content;
+        height: fit-content;
         align-items: center;
         justify-content: center;
     }
 
-    .hero-booking {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-    }
 }
 
 .hero-left {
@@ -437,20 +524,45 @@ body {
 }
 
 .hero-title {
-    font-family: 'B612 Mono', monospace;
+    font-family: 'Inter', monospace;
     font-size: 3rem;
     font-weight: 700;
-    color: #000;
+    color: #1A202C;
     line-height: 1.1;
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
 }
 
-@media (min-width: 1024px) {
-    .hero-title {
-        font-size: 4rem;
-    }
+.hero-title>p {
+    color: white;
+}
 
+
+@media (min-width: 1024px) {
     .hero-img {
-        transform: scale(1.3);
+        transform: scale(.6);
+    }
+}
+
+.bookNow {
+    background-color: rgba(255, 255, 255, 59%);
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    width: fit-content;
+    padding: 1rem;
+    color: rgba(0, 0, 0, 50%);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 8rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .bookNow {
+        margin-top: 14rem;
+        border-radius: 5rem;
+        margin-inline: auto;
     }
 }
 
@@ -465,8 +577,10 @@ body {
     background: #fff;
     border-radius: 0.5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    padding: 0.5rem;
     width: fit-content;
+    margin: auto;
+    margin-top: 5rem;
 }
 
 .booking-title {
@@ -479,7 +593,6 @@ body {
 
 .booking-fields {
     display: flex;
-    flex-direction: column;
     gap: 1rem;
 }
 
@@ -500,6 +613,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    width: fit-content;
 }
 
 .field-icon {
@@ -510,7 +624,6 @@ body {
 }
 
 .field-input {
-    width: 100%;
     padding: 0.75rem 0.75rem 0.75rem 2.5rem;
     background: #F3F4F6;
     border: none;
@@ -1171,8 +1284,8 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 1.8rem;
-        width: 20ch;
+        font-size: 2.2rem;
+        width: 40ch;
         margin-left: 2rem;
     }
 
@@ -1209,7 +1322,8 @@ body {
         display: none;
     }
 
-    .overlay.active, .booking-form.active {
+    .overlay.active,
+    .booking-form.active {
         display: block;
     }
 
