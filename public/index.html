@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 <!-- WhatsApp Chat Button -->
-<a href="https://wa.me/0946618040" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/0911130416" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
         <path
@@ -76,6 +76,64 @@
         </div>
     </header>
 
+    <div class="overlay" id="formOverlay">
+    </div>
+    <div class="booking-form-mobile booking-form" id="bookingForm">
+        <form class="booking-fields">
+            <!-- Pickup Location -->
+            <div class="field-group">
+                <label class="field-label">Pickup Location</label>
+                <div class="field-wrapper">
+                    <svg class="field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path
+                            d="M8.15625 1.5C5.67188 1.5 3.65625 3.41844 3.65625 5.78125C3.65625 8.5 6.65625 12.8084 7.75781 14.2966C7.85622 14.4318 7.98903 14.4994 8.15625 14.4994C8.32347 14.4994 8.45628 14.4318 8.55469 14.2966C9.65625 12.8091 12.6562 8.50219 12.6562 5.78125C12.6562 3.41844 10.6406 1.5 8.15625 1.5Z"
+                            stroke="#6B7280" stroke-linejoin="round" />
+                        <circle cx="8.15625" cy="6" r="1.5" stroke="#6B7280" stroke-linejoin="round" />
+                    </svg>
+                    <select class="field-input select-input">
+                        <option>ADDIS ABABA</option>
+                    </select>
+                    <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path
+                            d="M2.64648 4.85359L3.35359 4.14648L6.00004 6.79293L8.64649 4.14649L9.3536 4.85359L6.00005 8.20714L2.64648 4.85359Z"
+                            fill="#1F2937" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Date Selection -->
+            <div class="date-fields">
+                <div class="field-group">
+                    <label class="field-label">Pickup Date</label>
+                    <div class="field-wrapper">
+                        <svg class="field-icon" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                            <path
+                                d="M0.234375 14.5C0.234375 15.3281 0.90625 16 1.73438 16H12.7344C13.5625 16 14.2344 15.3281 14.2344 14.5V6H0.234375V14.5Z"
+                                fill="#6B7280" />
+                        </svg>
+                        <input type="datetime-local" placeholder="Jul 30, 2025" id="pickupDate" class="field-input">
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Return Date</label>
+                    <div class="field-wrapper">
+                        <svg class="field-icon" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                            <path
+                                d="M0.234375 14.5C0.234375 15.3281 0.90625 16 1.73438 16H12.7344C13.5625 16 14.2344 15.3281 14.2344 14.5V6H0.234375V14.5Z"
+                                fill="#6B7280" />
+                        </svg>
+                        <input type="datetime-local" placeholder="Select date" id="returnDate" class="field-input">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue Button -->
+            <div class="btn-continue" id="nextPageBtn">
+                <img loading="lazy" src="image/search.svg" />
+                <span>continue</span>
+            </div>
+        </form>
+    </div>
     <!-- Hero Section -->
     <section id="hero" class="hero">
 
@@ -96,7 +154,8 @@
                 <!-- Column 1: Text -->
                 <div class="hero-left">
                     <h1 class="hero-title">
-                        <span class="hero-title">Beyond <p>cars creating</p> journey“</span>
+                        <span class="hero-title"><span>Beyond</span> <span class="hero-inner-title">cars creating</span>
+                            <span>journey“</span></span>
                     </h1>
                 </div>
 
@@ -112,8 +171,6 @@
             </div>
             <!-- Booking Form positioned at bottom -->
             <div class="hero-booking">
-                <div class="overlay" id="formOverlay">
-                </div>
                 <div class="booking-form" id="bookingForm">
                     <form class="booking-fields">
                         <!-- Pickup Location -->
