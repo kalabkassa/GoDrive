@@ -171,22 +171,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Save both dates
-    document.getElementById('nextPageBtn').addEventListener('click', () => {
-        const pickup = document.getElementById('pickupDate').value;
-        const ret = document.getElementById('returnDate').value;
+    document.querySelectorAll('.btn-continue').forEach(btn => {
+        btn.addEventListener('click', () => {
 
-        if (pickup && ret) {
-            const pickupDateObj = new Date(pickup);
-            const returnDateObj = new Date(ret);
+            console.log("click");
+            const container = event.currentTarget.closest('.booking-fields');
+            const pickup = container.querySelector('.pickupDate').value;
+            const ret = container.querySelector('.returnDate').value;
+            if (pickup && ret) {
+                const pickupDateObj = new Date(pickup);
+                const returnDateObj = new Date(ret);
 
-            localStorage.setItem('pickupDate', formatDate(pickupDateObj));
-            localStorage.setItem('pickupTime', formatTime(pickupDateObj));
-            localStorage.setItem('returnDate', formatDate(returnDateObj));
-            localStorage.setItem('returnTime', formatTime(returnDateObj));
-            window.location.href = "vehicles.html"; // Change to your target page
-        } else {
-            alert("Please select both dates.");
-        }
+                localStorage.setItem('pickupDate', formatDate(pickupDateObj));
+                localStorage.setItem('pickupTime', formatTime(pickupDateObj));
+                localStorage.setItem('returnDate', formatDate(returnDateObj));
+                localStorage.setItem('returnTime', formatTime(returnDateObj));
+                window.location.href = "vehicles.html"; // Change to your target page
+            } else {
+                alert("Please select both dates.");
+            }
+        });
     });
 
 

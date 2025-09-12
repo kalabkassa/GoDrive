@@ -1317,11 +1317,7 @@ body {
     text-align: center;
 }
 
-.booking-form-mobile {
-    position: fixed;
-    top: 24%;
-    left: 20%;
-    z-index: 9999;
+.booking-form-mobile.booking-form {
     display: none;
 }
 
