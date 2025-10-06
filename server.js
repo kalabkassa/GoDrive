@@ -3,6 +3,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(cors());
@@ -82,7 +83,7 @@ app.post('/newsletter', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("✅ Server running at http://localhost:3000");
 });
 
