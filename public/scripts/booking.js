@@ -44,7 +44,6 @@ document.getElementById('nextPage').addEventListener('click', () => {
         return;
     }
 
-    window.location.href = "/thankyou";
     fetch("https://godriveet.com/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
