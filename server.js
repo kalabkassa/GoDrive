@@ -53,7 +53,7 @@ app.post("/send-email", async (req, res) => {
 
         await transporter.sendMail({
             from: `"Website Contact" <${process.env.SMTP_USER}>`,
-            to: process.env.RECEIVER_EMAIL,
+            to: [process.env.RECEIVER_EMAIL, email],
             subject: `Message from ${name}`,
             text: `
                 Name: ${name}

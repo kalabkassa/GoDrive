@@ -45,32 +45,32 @@ document.getElementById('nextPage').addEventListener('click', () => {
     }
 
     window.location.href = "/thankyou";
-    /*    fetch("https://godriveet.com/send-email", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                name: fullName,
-                email: email,
-                phone: phone,
-                car: selectedCar,
-                pickupDate: pickupDate,
-                pickupTime: pickupTime,
-                returnDate: returnDate,
-                returnTime: returnTime
-            })
+    fetch("https://godriveet.com/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            name: fullName,
+            email: email,
+            phone: phone,
+            car: selectedCar,
+            pickupDate: pickupDate,
+            pickupTime: pickupTime,
+            returnDate: returnDate,
+            returnTime: returnTime
         })
-            .then(res => res.json())
-            .then(data => {
-                if (data.success) {
-                    alert("✅ Email sent successfully!");
-                    // If all checks pass, move to next page
-                    window.location.href = "/thankyou";
-                } else {
-                    alert("❌ Failed to send email: " + data.error);
-                    console.log("❌ Failed to send email: " + data.error);
-                }
-            })
-            .catch(err => {
-                alert("❌ Error: " + err);
-            });*/
+    })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                alert("✅ Email sent successfully!");
+                // If all checks pass, move to next page
+                window.location.href = "/thankyou";
+            } else {
+                alert("❌ Failed to send email: " + data.error);
+                console.log("❌ Failed to send email: " + data.error);
+            }
+        })
+        .catch(err => {
+            alert("❌ Error: " + err);
+        });
 });
