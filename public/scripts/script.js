@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('pickupTime', formatTime(pickupDateObj));
                 localStorage.setItem('returnDate', formatDate(returnDateObj));
                 localStorage.setItem('returnTime', formatTime(returnDateObj));
-                window.location.href = "vehicles.html"; // Change to your target page
+                window.location.href = "/vehicles"; // Change to your target page
             } else {
                 alert("Please select both dates.");
             }

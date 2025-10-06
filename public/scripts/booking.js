@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener('click', function(e) {
             console.log(this.hash);
             localStorage.setItem('hash', this.hash);
-            window.location.href = "index.html";
+            window.location.href = "/";
         });
     });
 
@@ -44,7 +44,7 @@ document.getElementById('nextPage').addEventListener('click', () => {
         return;
     }
 
-    window.location.href = "thankyou.html";
+    window.location.href = "/thankyou";
     /*    fetch("https://godriveet.com/send-email", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -64,7 +64,7 @@ document.getElementById('nextPage').addEventListener('click', () => {
                 if (data.success) {
                     alert("✅ Email sent successfully!");
                     // If all checks pass, move to next page
-                    window.location.href = "thankyou.html";
+                    window.location.href = "/thankyou";
                 } else {
                     alert("❌ Failed to send email: " + data.error);
                     console.log("❌ Failed to send email: " + data.error);

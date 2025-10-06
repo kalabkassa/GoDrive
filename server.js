@@ -10,6 +10,31 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
+// --- Routes ---
+
+// Vehicles listing page
+app.get('/vehicles', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'vehicles.html'));
+});
+
+// Booking page for each vehicle (you handle ID in frontend JS)
+const allowedCars = ['yaris', 'dezire', 'glory', 'highroof', 'toyota'];
+
+app.get('/vehicles/:id', (req, res) => {
+    const carId = req.params.id.toLowerCase();
+
+    if (allowedCars.includes(carId)) {
+        res.sendFile(path.join(__dirname, 'public', `booking-${carId}.html`));
+    } else {
+        res.status(404).send('Vehicle not found');
+    }
+});
+
+// Thank you page after booking
+app.get('/thankyou', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'thankyou.html'));
+});
+
 // Email endpoint
 app.post("/send-email", async (req, res) => {
     const { name, email, phone, car, pickupDate, pickupTime, returnDate, returnTime } = req.body;
