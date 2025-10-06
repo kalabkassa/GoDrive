@@ -83,7 +83,7 @@ app.post('/newsletter', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log("✅ Server running at http://localhost:3000");
-});
-
+//app.listen(port, () => {
+//    console.log("✅ Server running at http://localhost:3000");
+//});
+module.exports = app;
