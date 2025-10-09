@@ -54,7 +54,7 @@ app.post("/send-email", async (req, res) => {
         await transporter.sendMail({
             from: `"Go Drive Website" <${process.env.SMTP_USER}>`,
             to: process.env.RECEIVER_EMAIL,
-            subject: `🚗 New Booking: ${name} | ${pickupDate} – ${returnDate}`,
+            subject: `New Booking: ${name} | ${pickupDate} – ${returnDate}`,
             text: `New car booking received:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nCar: ${car}\nPickup: ${pickupDate} at ${pickupTime}\nReturn: ${returnDate} at ${returnTime}`,
             html: `<h2>New Car Booking Received</h2>
             <p><b>Name:</b> ${name}</p>
@@ -70,7 +70,7 @@ app.post("/send-email", async (req, res) => {
         await transporter.sendMail({
             from: `"Go Drive" <${process.env.SMTP_USER}>`,
             to: email,
-            subject: `✅ Booking Confirmed – ${car} from ${pickupDate} | Go Drive`,
+            subject: `Booking Confirmed – ${car} from ${pickupDate} | Go Drive`,
             text: `Hi ${name},\n\nThanks for booking with Go Drive!\n\nHere are your booking details:\nCar: ${car}\nPickup: ${pickupDate} at ${pickupTime}\nReturn: ${returnDate} at ${returnTime}\nPhone: ${phone}\nEmail: ${email}\n\nIf you have any questions or need to make changes, feel free to contact us.\n\nSafe travels,\nThe Go Drive Team`,
             html: `<p>Hi ${name},</p>
             <p>Thank you for choosing <strong>Go Drive</strong>! Your booking has been successfully received. Below are your booking details:</p>
