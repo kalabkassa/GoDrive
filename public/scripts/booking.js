@@ -61,7 +61,6 @@ document.getElementById('nextPage').addEventListener('click', () => {
         .then(res => res.json())
         .then(data => {
             if (data.success) {
-                alert("✅ Email sent successfully!");
                 // If all checks pass, move to next page
                 window.location.href = "/thankyou";
             } else {
