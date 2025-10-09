@@ -708,7 +708,16 @@ body {
     white-space: nowrap;
     scroll-behavior: smooth;
     cursor: grab;
+
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    position: relative;
+}
+
+.customers-scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
 }
 
 .customers-scroll-track {
@@ -750,7 +759,7 @@ body {
 
 /* Pause animation on hover */
 .customers-scroll-container:hover .customers-scroll-track,
-.customers-scroll-container:active .customers-scroll-track {
+.customers-scroll-container.dragging .customers-scroll-track {
     animation-play-state: paused;
 }
 
